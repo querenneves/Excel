@@ -1,0 +1,3 @@
+=ALEATÓRIOENTRE(0;10) - Formula para números especificados
+=SE(F2<7;"Reprovado(a)";"Aprovado(a)") - Formula testa se é verdadeiro ou falso (Três camadas: teste lógico, teste valor verdadeiro e teste valor falso)
+=SE(F2<$J$7;$K$7;$K$8) - Fixando com f4 através da regra de parâmetro  
