@@ -1,0 +1,3 @@
+=MÉDIA(B2:B6) - MÉDIA
+=MÁXIMO(B2:B6) - MÁXIMO
+=MÍNIMO(B2:B6) - MÍNIMO
