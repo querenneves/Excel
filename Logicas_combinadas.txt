@@ -1,0 +1,8 @@
+Comparações lógicas entre um valor e aquilo que você espera
+=SE(referencia=valor;mensagem;senão, valor) - não esquecer de fixar com f4
+
+SE com E
+=SE(E(Referencia="valor";I9="valor");"mensagem";"mensagem")
+
+SE com OU
+=SE(OU(Referencia>=valor;Referencia>=valor);"mensagem";"mensagem")
