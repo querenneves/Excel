@@ -1,0 +1,16 @@
+=PROCV(Referência; Tabela_de_Métricas; Índice_da_Coluna; [Procurar_Valor_Aproximado])
+
+Explicação:
+
+Referência: A célula ou valor que você deseja procurar.
+Tabela_de_Métricas: O intervalo de células onde a busca será realizada. Este intervalo deve ser fixado (usando $) para evitar problemas ao copiar a fórmula.
+Índice_da_Coluna: O número da coluna na tabela de métricas de onde você deseja obter a informação. O Excel começa a contar as colunas a partir da primeira coluna do intervalo selecionado.
+Procurar_Valor_Aproximado: Use VERDADEIRO para uma correspondência aproximada e FALSO para uma correspondência exata.
+Exemplo:
+
+Se você deseja buscar um valor na coluna K, mas precisa selecionar as colunas J e K na tabela de métricas, o índice da coluna desejada será 2, pois a contagem começa na coluna J (1) e K será a segunda coluna (2).
+
+VERDADEIRO: Retorna um valor aproximado.
+FALSO: Retorna um valor exato. 
+
+NÃO ESQUEÇA DE FIXAR TABELA
