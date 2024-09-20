@@ -1,0 +1,18 @@
+A diferença entre o PROCV simples e o PROCV duplo
+
+O PROCV simples: Faz uma única busca e retorna o valor imediatamente relacionado ao valor procurado.
+
+Estrutura da fórmula:
+
+=PROCV(Valor_Procurado; Tabela; Índice_da_Coluna; [Procurar_Valor_Aproximado])
+
+PROCV Duplo: Realiza duas buscas consecutivas. O resultado da primeira busca é usado como entrada para a segunda busca. É útil quando você precisa buscar dados que dependem de informações intermediárias (como a categoria no exemplo).
+
+Estrutura da fórmula:
+
+=PROCV(PROCV(Valor_Procurado; Tabela1; Índice1; FALSO); Tabela2; Índice2; FALSO)
+
+Exemplo:
+
+Tabela 1: Contém os códigos de produtos e suas categorias.
+Tabela 2: Contém as categorias e os preços padrão de cada categoria.

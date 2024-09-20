@@ -1,0 +1,13 @@
+PARÂMETRO:
+
+=PARÂMETRO(G9;1;"Muito Ruim";2;"Ruim";3;"Bom";4;"Muito Bom";5;"Excelente")
+
+-> Valor; Resposta
+
+-> Não esta presa em uma tabela
+
+-> É possível selecionar a célula (Não esquecer de fixar se usar esse método)
+
+-> Pode inserir elementos de forma ilimitada
+
+-> Precisa sempre ser em dupla: valor e resultado
