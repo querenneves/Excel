@@ -1,0 +1,13 @@
+Estrutura da função ÍNDICE:
+
+=ÍNDICE(matriz; número_da_linha; [número_da_coluna])
+
+=> Não esquecer de fixar matriz de métricas
+
+matriz: O intervalo de células de onde você quer retornar um valor.
+número_da_linha: O número da linha dentro da matriz onde está o valor desejado.
+número_da_coluna: O número da coluna dentro da matriz onde está o valor desejado.
+
+-> Em caso de colunas desalinhadas, identifique o padrão matemático dos valores para compará-los com o índice da matriz.
+
+-> O índice da linha ou coluna é contado a partir do primeiro elemento selecionado no intervalo.
