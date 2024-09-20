@@ -1,0 +1,27 @@
+Busca em duas etapas:
+
+Primeira Etapa (PROCV interno): Busca uma primeira informação (por exemplo, um código, um nome, etc.) com base em uma referência.
+
+Segunda Etapa (PROCV externo): Usa o valor obtido na primeira busca para fazer uma segunda busca em outra coluna ou tabela, permitindo localizar um valor dependente de uma variável que pode não estar diretamente disponível.
+
+=PROCV(PROCV(Referencia; Tabela_de_Métricas; Índice_da_Coluna; Procurar_Valor_Aproximado); Tabela_de_Métricas; PROCV! Índice_da_Coluna + Valor padrão encontrado; [Procurar_Valor_Aproximado])
+
+Etapa 1: PROCV Interno (Primeiro PROCV)
+
+=PROCV(Referencia; Tabela_de_Métricas; Índice_da_Coluna; Procurar_Valor_Aproximado)
+
+Referencia: O valor que você está procurando na tabela.
+Tabela_de_Métricas: A tabela onde você está buscando os dados.
+Índice_da_Coluna: O número da coluna na tabela de onde você quer obter o valor (a contagem começa na coluna mais à esquerda da tabela).
+Procurar_Valor_Aproximado: Geralmente, você define como FALSO para uma correspondência exata ou VERDADEIRO para uma correspondência aproximada.
+
+Etapa 2: PROCV Externo (Segundo PROCV)
+
+=PROCV(Resultado_Do_Primeiro_Procv; Tabela_de_Métricas; PROCV! Índice_da_Coluna + Valor padrão encontrado; [Procurar_Valor_Aproximado])
+
+
+Resultado_Do_Primeiro_Procv: O resultado obtido do primeiro PROCV (interno). - Intermedio
+Tabela_de_Métricas: A mesma tabela ou outra tabela de onde você vai buscar o próximo valor.
+PROCV! Índice_da_Coluna + Valor padrão encontrado: Aqui você está ajustando o índice da coluna para compensar variações na estrutura da tabela (já que a coluna é variante e não fixa).
+Exemplo: Se o índice da coluna da segunda tabela varia, você pode somar ou ajustar dinamicamente esse valor com base no resultado encontrado.
+Procurar_Valor_Aproximado: Novamente, você define FALSO para uma correspondência exata.
