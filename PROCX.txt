@@ -1,0 +1,7 @@
+=PROCX(O_valor_de_pesquisa;valor_intervalo!O_intervalo_de_retorno:;Planilha!valor_correspondente;;0;1)
+
+"": Esse argumento é opcional. Ele poderia ser usado para fornecer um valor de pesquisa exata, mas aqui foi deixado vazio.
+
+0: Define o modo de correspondência exata - O valor 0 indica que ele deve procurar exatamente o valor de x.
+
+1: Busca uma correspondência aproximada
