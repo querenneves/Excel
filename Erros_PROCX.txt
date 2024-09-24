@@ -1,0 +1,8 @@
+Erros no PROCX
+
+O PROCX é muito mais robusto para lidar com erros sem precisar de funções adicionais como o SEERRO. Ele tem um argumento embutido que permite definir o que será retornado se o valor não for encontrado ou se ocorrer outro tipo de erro.
+
+=PROCX(A1;B2:B10;C2:C10;;0;1;"Valor não encontrado")
+
+Neste exemplo, se a fórmula não encontrar o valor de A1 na coluna B2:B10, ela vai retornar "Valor não encontrado" automaticamente. O último argumento da fórmula é onde você especifica o valor padrão que será exibido em caso de erro ou quando não houver correspondência.
+

@@ -1,0 +1,18 @@
+IFERRO (ou SEERRO em português) 
+
+é uma maneira simples e eficaz de tratar erros em fórmulas no Excel. Ela substitui os erros por um valor ou mensagem que você definir, sem a necessidade de alterar a lógica da fórmula principal.
+
+A sintaxe da função é:
+
+=IFERRO(fórmula; valor_se_erro)
+
+Ou, em português:
+
+=SEERRO(fórmula; valor_se_erro)
+
+Como funciona:
+
+Quando você utiliza a IFERRO ou SEERRO, o Excel executa a fórmula normalmente. Se a fórmula der algum erro, ele retorna o valor que você especificou no argumento valor_se_erro.
+
+=SEERRO(PROCX(A1;B2:B10;C2:C10;;0;1);"Valor não encontrado")
+

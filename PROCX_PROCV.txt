@@ -1,0 +1,39 @@
+Forma de Busca: Vertical (PROCV) x Flexível (PROCX)
+PROCV (Procura Vertical): Ele só permite fazer uma busca vertical, ou seja, na primeira coluna de uma tabela. A função busca um valor em uma coluna específica e retorna o valor de outra coluna à direita.
+
+Exemplo: =PROCV(A1;Tabela;2;FALSO) procura o valor em A1 na primeira coluna da Tabela e retorna o valor correspondente da segunda coluna.
+PROCX (Procura Flexível): É muito mais flexível, pois permite buscas tanto verticais quanto horizontais. Ele pode buscar em uma coluna ou linha de qualquer lugar da tabela e também retornar valores de qualquer coluna ou linha (não precisa ser apenas da direita).
+
+Exemplo: =PROCX(A1;Tabela[Coluna1];Tabela[Coluna3];...) busca o valor em A1 na Coluna1 e pode retornar um valor da Coluna3, mesmo que esteja à esquerda ou à direita.
+2. Limitações de Colunas (PROCV) x Qualquer Intervalo (PROCX)
+PROCV só permite buscar o valor na primeira coluna de um intervalo e retornar valores apenas de colunas à direita.
+
+PROCX pode fazer uma busca em qualquer coluna ou linha e retornar valores de qualquer coluna ou linha, à esquerda ou à direita do valor de pesquisa. Isso resolve uma grande limitação do PROCV.
+
+3. Correspondência Exata e Aproximada
+PROCV: Tem dois modos de busca: exata (FALSO) ou aproximada (VERDADEIRO), mas geralmente depende de como os dados estão organizados (a coluna de busca precisa estar ordenada para correspondência aproximada funcionar bem).
+
+PROCX: Tem mais opções de correspondência, incluindo exata, aproximada, ou uma correspondência baseada em intervalos, além de permitir o controle de pesquisa reversa (de baixo para cima).
+
+4. Direção de Busca: Apenas para a Direita (PROCV) x Para Qualquer Lado (PROCX)
+PROCV: Só faz a busca em colunas à direita da coluna onde o valor está sendo pesquisado. Ou seja, ele não consegue buscar em uma coluna e retornar um valor de uma coluna à esquerda.
+
+PROCX: Pode buscar um valor em uma coluna e retornar um valor de qualquer outra coluna, seja à esquerda ou à direita do valor de pesquisa.
+
+5. Ordem de Pesquisa: Início ao Fim (PROCV) x Flexível (PROCX)
+PROCV: Faz a busca sempre do início ao fim da tabela, ou seja, da primeira linha até a última.
+
+PROCX: Permite você escolher a direção da pesquisa, seja da primeira para a última linha (padrão), ou de trás para frente (última linha para a primeira).
+
+6. Tolerância a Erros (PROCX)
+PROCX: Oferece mais opções para lidar com erros ou valores não encontrados, como fornecer um valor padrão quando a busca falha, enquanto o PROCV retorna um erro direto se o valor não for encontrado.
+Exemplos comparativos:
+PROCV:
+=PROCV(A1;B2:D10;3;FALSO)
+Aqui, ele procura o valor de A1 na primeira coluna do intervalo B2:D10 e retorna o valor da terceira coluna.
+
+PROCX:
+
+=PROCX(A1;B2:B10;D2:D10;;0;1)
+Aqui, ele busca o valor de A1 na coluna B (intervalo B2:B10) e retorna o valor correspondente na coluna D (intervalo D2:D10), com busca exata e do início para o fim.
+
